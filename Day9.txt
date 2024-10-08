@@ -1,0 +1,28 @@
+Import Sudo commands for WSL(Windows Subsystem for Linux) And Ubuntu
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install ansible -y
+
+ansible --version
+
+ansible [core 2.10.8] mkdir ~/ansible-playbooks 
+
+cd ~/ansible-playbooks
+
+nano playbook.yml
+
+Created the playbook-
+
+
+---
+- name: Test Ansible Ping
+  hosts: localhost
+  tasks:
+    - name: Ping the local machine
+      ansible.builtin.ping:
+
+
+ansible-playbook playbook.yml
+
+
